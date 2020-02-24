@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -36,4 +38,8 @@ public class MovimentacaoEntity {
 	
 	@Column(name = "dt_fim_movimentacao", nullable = false)
 	private Date dataFim;
+	
+	@ManyToOne
+	@JoinColumn(name="container_id")
+	private ContainerEntity container;
 }
