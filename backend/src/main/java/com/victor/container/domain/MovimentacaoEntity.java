@@ -36,7 +36,7 @@ public class MovimentacaoEntity {
 	@Column(name = "dt_inicio_movimentacao", nullable = false)
 	private Date dataInicio;
 	
-	@Column(name = "dt_fim_movimentacao", nullable = false)
+	@Column(name = "dt_fim_movimentacao", nullable = true)
 	private Date dataFim;
 	
 	@ManyToOne

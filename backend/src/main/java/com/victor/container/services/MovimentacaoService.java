@@ -1,5 +1,6 @@
 package com.victor.container.services;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -28,6 +29,7 @@ public class MovimentacaoService {
 	
 	public MovimentacaoEntity insert(MovimentacaoEntity obj) {
 		obj.setId(null);
+		obj.setDataInicio(new Date());
 		return repo.save(obj);
 	}
 }
