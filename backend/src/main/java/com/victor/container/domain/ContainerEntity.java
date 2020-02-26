@@ -44,7 +44,7 @@ public class ContainerEntity {
 	private String categoria;
 	
 	@JsonIgnore
-	@OneToMany(mappedBy = "estado")
+	@OneToMany(mappedBy = "container")
 	private List<MovimentacaoEntity> movimentacoes;
 	
 	
