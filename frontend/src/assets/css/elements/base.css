@@ -1,0 +1,16 @@
+body{
+  background-color: var(--color-primary-gray);
+}
+
+aside {
+  width: 320px;
+  height: 100vh;
+  background-color: var(--color-menu);
+}
+
+nav {
+  padding-top: var(--gap-small);
+  padding-left: var(--gap-medium);
+  display: flex;
+  flex-direction: column;
+}
