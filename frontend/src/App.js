@@ -7,6 +7,8 @@ import './assets/css/settings/gap.css';
 
 import './assets/css/generic/reset.css';
 
+import './assets/css/components/root.css';
+
 import './assets/css/elements/base.css';
 
 function App() {

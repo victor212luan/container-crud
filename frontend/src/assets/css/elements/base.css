@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
 body{
   background-color: var(--color-primary-gray);
+  font-family: 'Roboto', sans-serif;
 }
 
 aside {
@@ -13,4 +16,8 @@ nav {
   padding-left: var(--gap-medium);
   display: flex;
   flex-direction: column;
+}
+
+main{
+  flex: 1;
 }
