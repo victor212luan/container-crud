@@ -7,6 +7,7 @@ import {
 
 import Dashboard from "./pages/Dashboard";
 
+import Home from './components/home';
 import Container from "./components/containers";
 import Movimentacoes from "./components/movimentacoes";
 import Pesquisa from "./components/pesquisa";
@@ -14,20 +15,25 @@ import Relatorio from "./components/relatorio";
 
 export default function RoutesApplication() {
   return (
-    <Router>
+    <Router 
+      basename="/dashboard"
+    >
       <Dashboard />
       <main>
         <Switch>
-          <Route path="/dashboard/container">
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/container">
             <Container />
           </Route>
-          <Route path="/dashboard/movimentacoes">
+          <Route path="/movimentacoes">
             <Movimentacoes />
           </Route>
-          <Route path="/dashboard/pesquisa">
+          <Route path="/pesquisa">
             <Pesquisa />
           </Route>
-          <Route path="/dashboard/relatorio">
+          <Route path="/relatorio">
             <Relatorio />
           </Route>
         </Switch>

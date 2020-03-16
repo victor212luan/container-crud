@@ -1,0 +1,8 @@
+.nav-link{
+  margin: var(--gap-medium) 0;
+  color: var(--color-primary);
+}
+
+.nav-link.initial{
+  margin: var(--gap-large) 0;
+}

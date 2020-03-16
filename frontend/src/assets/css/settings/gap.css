@@ -1,4 +1,6 @@
 :root{
+  --gap-smaller: 12px;
   --gap-small: 16px;
-  --gap-medium: 20px;
+  --gap-medium: 18px;
+  --gap-large: 26px;
 }

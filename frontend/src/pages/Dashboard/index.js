@@ -1,42 +1,50 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import MenuOutlinedIcon from '@material-ui/icons/MenuOutlined';
+import PostAddIcon from '@material-ui/icons/PostAdd';
+import SearchIcon from '@material-ui/icons/Search';
+import AssignmentIcon from '@material-ui/icons/Assignment';
+
+import '../../assets/css/objects/nav-link.css';
 import '../../assets/css/objects/link-action.css';
+import '../../assets/css/objects/link-icon.css';
 
 export default function Dashboard(){
   return(
     <aside>
       <nav>
-        <Link 
-          className="link-action"
-          to="/dashboard" 
-        >
-          Dashboard
-        </Link>
-        <Link 
-          className="link-action" 
-          to="/dashboard/container" 
-        >
-          Cadastrar Container
-        </Link>
-        <Link 
-          className="link-action" 
-          to="/dashboard/movimentacoes" 
-        >
-          Cadastrar Movimentações
-        </Link>
-        <Link 
-          className="link-action" 
-          to="/dashboard/pesquisa" 
-        >
-          Pesquisar
-        </Link>
-        <Link 
-          className="link-action" 
-          to="/dashboard/relatorio" 
-        >
-          Relatório
-        </Link>
+        <div className="nav-link initial">
+          <MenuOutlinedIcon 
+            className="link-icon" preserveAspectRatio="xMaxYMax meet"/>
+          <Link className="link-action main" to="/" >
+            Dashboard
+          </Link>
+        </div>
+        <div className="nav-link">
+          <PostAddIcon className="link-icon"/>
+          <Link className="link-action"  to="/container" >
+            Cadastrar Container
+          </Link>
+        </div>
+        <div className="nav-link">
+          <PostAddIcon className="link-icon"/>
+          <Link className="link-action"  to="/movimentacoes" >
+            Cadastrar Movimentações
+          </Link>
+        </div>
+        <div className="nav-link">
+          <SearchIcon className="link-icon"/>
+          <Link className="link-action"  to="/pesquisa" >
+            Pesquisar
+          </Link>
+        </div>
+        <div className="nav-link">
+          <AssignmentIcon className="link-icon"/>
+          <Link className="link-action"  to="/relatorio" >
+            Relatório
+          </Link>
+        </div>
       </nav>
   </aside>
   );

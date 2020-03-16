@@ -1,6 +1,13 @@
 .link-action{
-  margin: var(--gap-medium) 0;
+  margin: 0  var(--gap-smaller);
   color: var(--color-primary);
   text-decoration: none;
+  vertical-align: middle;
+}
+
+.link-action.main {
+  margin: var(--gap-large) var(--gap-smaller);
+  text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: 0.015em;
 }
