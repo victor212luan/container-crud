@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../../assets/css/objects/card-body.css';
+import '../../assets/css/components/card-body.css';
+import '../../assets/css/components/card-content.css';
 
 export default function Card(props){
   return(

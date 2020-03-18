@@ -1,5 +1,7 @@
 :root{
   --color-primary: #FFFFFF;
   --color-primary-gray: #EEEEEE;
+  --color-black: #000000;
   --color-menu: #006064;
+  --color-menu-hover: #007175;
 }

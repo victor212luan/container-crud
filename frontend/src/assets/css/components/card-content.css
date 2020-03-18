@@ -1,0 +1,18 @@
+.card-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-content img{
+  width: 100px;
+  height: 100px;
+  margin: var(--gap-medium);
+}
+
+.card-content a{
+  color: var(--color-black);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: var(--gap-large);
+}
