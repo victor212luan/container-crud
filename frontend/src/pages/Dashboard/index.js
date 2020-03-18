@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import MenuOutlinedIcon from '@material-ui/icons/MenuOutlined';
-import PostAddIcon from '@material-ui/icons/PostAdd';
+import DirectionsBoatIcon from '@material-ui/icons/DirectionsBoat';
+import LocalShippingIcon from '@material-ui/icons/LocalShipping';
 import SearchIcon from '@material-ui/icons/Search';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 
@@ -22,13 +23,13 @@ export default function Dashboard(){
           </Link>
         </div>
         <div className="nav-link">
-          <PostAddIcon className="link-icon"/>
+          <DirectionsBoatIcon className="link-icon"/>
           <Link className="link-action"  to="/container" >
             Cadastrar Container
           </Link>
         </div>
         <div className="nav-link">
-          <PostAddIcon className="link-icon"/>
+          <LocalShippingIcon className="link-icon"/>
           <Link className="link-action"  to="/movimentacoes" >
             Cadastrar Movimentações
           </Link>
