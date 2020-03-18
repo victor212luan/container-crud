@@ -6,12 +6,15 @@ import '../../assets/css/objects/card-body.css';
 export default function Card(props){
   return(
     <div className="card-body">
-      <header className="card-header">
-        <img src={props.arquivo} alt={props.titulo} className="card-img"/>
+      <header className="card-content">
+        <img 
+          src={props.arquivo} 
+          alt={props.titulo} 
+        />
+        <Link to={props.link}>
+          {props.titulo}
+        </Link>
       </header>
-      <Link to={props.link} className="card-link">
-        {props.titulo}
-      </Link>
     </div>
   );
 }
